@@ -21,6 +21,7 @@ page "/feed.xml", :layout => false
 page "/articles", :layout => "articles"
 
 activate :directory_indexes
+activate :cache_buster
 
 configure :build do
   activate :asset_hash, :exts => ['.js', '.css', '.png', '.gif', '.jpg', '.woff']
