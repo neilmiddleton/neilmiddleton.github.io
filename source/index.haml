@@ -1,0 +1,10 @@
+- wrap_layout :application do
+  %section.content
+    = partial 'layouts/bio'
+    = partial 'layouts/articles_list'
+
+  -# %ul.listing
+  -#   - articles.group_by{|a| a.date.strftime("%Y")}.each do |year, articles|
+  -#     %h3= year
+  -#     - articles.each do |article|
+  -#       %li= link_to article.title, article
