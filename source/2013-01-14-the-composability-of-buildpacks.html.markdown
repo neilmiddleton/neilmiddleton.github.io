@@ -38,7 +38,7 @@ So, it looked like I had a couple of buildpacks that served their purpose.  Only
 
 ## Composability
 
-Luckily though, there's one more buildpack on the horizon, that of Ben Mather's [Compose].  This buildpack takes your application and looks for a `.buildpacks` file in the root.  Within this file you enter a line delimited list of all the buildpacks you want to use within your deploy process, in the order that you want them to occur.  For instance:
+Luckily though, there's one more buildpack on the horizon, that of David Dollar's [Multi-buildpack].  This buildpack takes your application and looks for a `.buildpacks` file in the root.  Within this file you enter a line delimited list of all the buildpacks you want to use within your deploy process, in the order that you want them to occur.  For instance:
 
 ```ruby
 git://github.com/meskyanichi/heroku-buildpack-middleman.git
@@ -63,5 +63,5 @@ By chaining together two buildpacks I'm able to form a repeatable process that I
 [Middleman buildpack]: https://github.com/meskyanichi/heroku-buildpack-middleman
 [Nginx buildpack]: https://github.com/essh/heroku-buildpack-nginx
 [Rack-Cache]: https://github.com/rtomayko/rack-cache
-[Compose]: https://github.com/bwhmather/heroku-buildpack-compose
+[Multi-buildpack]: https://github.com/ddollar/heroku-buildpack-multi
 
