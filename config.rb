@@ -1,4 +1,5 @@
 require "lib/pygments_renderer"
+require "newrelic_rpm"
 
 set :markdown_engine, :redcarpet
 set :markdown, :renderer => PygmentsRenderer, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true,
