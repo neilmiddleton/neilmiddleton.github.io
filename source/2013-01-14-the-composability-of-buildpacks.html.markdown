@@ -57,7 +57,6 @@ By chaining together two buildpacks I'm able to form a repeatable process that I
 [Github Pages]: http://pages.github.com/
 [Jekyll]: https://github.com/mojombo/jekyll
 [what I did]: https://github.com/neilmiddleton/neilmiddleton.github.com
-neilmiddleton.github.com
 [Markdown]: http://daringfireball.net/projects/markdown/
 [Middleman]: http://middlemanapp.com/
 [buildpacks]: https://devcenter.heroku.com/articles/buildpacks
