@@ -1,7 +1,7 @@
 ---
 title: The composability of buildpacks
 date: 2013-01-14 16:20 +00:00
-published: false
+published: true
 wip: true
 ---
 For the last year or so I've been hosting this site on [Github Pages], a service that they provide to their members for hosting static websites free of charge. The idea is that you can host a site dedicated to a particular repository that you own as a way of advertising it, or for publishing some documentation.  By creating a repository for a blog there's no reason why you can't also host your personal website on it too, which is [what I did].
