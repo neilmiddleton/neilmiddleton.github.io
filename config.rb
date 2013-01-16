@@ -8,6 +8,7 @@ set :markdown, :renderer => PygmentsRenderer, :tables => true, :autolink => true
 activate :blog do |blog|
   blog.permalink = ":title"
   blog.layout = "post"
+  blog.sources = "articles/:year-:month-:day-:title"
 end
 
 Time.zone = "London"
