@@ -86,8 +86,7 @@ security:
 
 ```bash
 $ gem install travis
-$ travis encrypt your_github_username/your_github_repo \
-  HEROKU_API_KEY=<your_heroku_key>
+$ travis encrypt HEROKU_API_KEY=<your_heroku_key> --add
 ```
 
 So, now we have our encrypted key, let's tell Travis about it by adding
@@ -116,7 +115,7 @@ and some other fun.  By adding the following to our `.travis.yml` we can
 acheive this:
 
 ```yaml
-after_script:
+after_success:
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:YOUR_HEROKU_APP.git
   - echo "Host heroku.com" >> ~/.ssh/config
@@ -162,7 +161,7 @@ locally as opposed to on the Heroku stack itself.
 In order to get this working we need an after script like this:
 
 ```yaml
-after_script:
+after_success:
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - heroku plugins:install https://github.com/ddollar/heroku-anvil
   - heroku build -r <YOUR_HEROKU_APP_NAME>  -b
@@ -208,7 +207,7 @@ used. This value is either "true" or "false".
 Therefore we can now do clever things such as:
 
 ```yaml
-after_script:
+after_success:
   - gem install heroku
   - if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]; then echo "This is a
       pull request. No deployment will be done."; exit 0; fi
@@ -229,6 +228,14 @@ a task.
 So, we've got everything setup and we should have a well oiled
 continuous deployment machine centered around Travis CI and Heroku. What's more, now it's setup and working, we can pretty much forget about
 ever having to deploy manually again.
+
+<p class="note">
+Update: Travis has changed the behaviour of `after_script` to run after *every* build, successful or not.  To ensure that we are only running post successful builds, we now need to use `after_success`.  Thanks to Stuart Bentley for pointing this out.
+</p>
+
+<p class="note">
+Update: Travis has changed the behaviour of `travis encrypt` so that the source Github repo is no longer required.  Another spot by Stuart Bentley.
+</p>
 
 *The 'Heroku' book, published by O'Reilly, is [available for
 pre-order on
