@@ -20,6 +20,7 @@ set :images_dir, 'images'
 page "/", :layout => "index"
 page "/feed.xml", :layout => false
 page "/articles", :layout => "articles"
+page "/colophon", :layout => "colophon"
 
 activate :directory_indexes
 activate :cache_buster
