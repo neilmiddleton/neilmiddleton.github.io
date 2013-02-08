@@ -45,6 +45,9 @@ a
   color: #530000
   text-decoration: none
 
+img.profile
+  margin: 8px 10px 10px 0
+
 article
   a
     border-bottom: 1px #bbb dashed
@@ -77,16 +80,6 @@ blockquote
     a
       margin-right: 20px
       font-size: 15px
-    ul
-      list-style: none
-    li
-      display: inline-block
-      margin: 0 3px
-      font-size: 17px
-      &::after
-        content: ' | '
-      &:last-child::after
-        content: ''
   .name
     display: inline-block
     float: left
@@ -101,6 +94,24 @@ blockquote
       -webkit-font-smoothing: antialiased
       text-rendering: optimizeLegibility
   .date!
+
+.header, footer
+  ul
+    list-style: none
+    li
+      display: inline-block
+      margin: 0 3px 0 0
+      &::after
+        content: ' | '
+      &:last-child::after
+        content: ''
+      a
+        margin: 0 3px
+
+.header
+  ul
+    li
+      font-size: 17px
 
 #neil > span
   font-size: 28px

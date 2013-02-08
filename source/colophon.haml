@@ -1,5 +1,6 @@
 - contributors = File.new(File.expand_path("./../../contributors", __FILE__),'r')
 
+- content_for(:page_title, "Colophon")
 - wrap_layout(:application) do
   %article
     %header
@@ -45,6 +46,7 @@
 
       Analytics are provided by Google.
 
+    %a{:target => "contributors"}
     %h2 Contributions
 
     :markdown

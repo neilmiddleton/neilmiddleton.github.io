@@ -21,6 +21,7 @@ page "/", :layout => "index"
 page "/feed.xml", :layout => false
 page "/articles", :layout => "articles"
 page "/colophon", :layout => "colophon"
+page "/about-me", :layout => "about_me"
 
 activate :directory_indexes
 activate :cache_buster

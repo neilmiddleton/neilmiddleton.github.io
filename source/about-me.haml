@@ -1,0 +1,35 @@
+- content_for(:page_title, "About Me")
+- wrap_layout(:application) do
+  %article
+    %header
+      %h1 About Me
+      %p.date
+
+    %img.profile{src: "/images/mugshot.jpg", align: 'left'}
+    %p
+      I'm a Rails developer from the UK currently working for an agency in Surrey
+      called
+      = succeed "." do
+        %a{:href => "http://www.kyan.com", :target => "_blank"} Kyan
+
+    %p
+      I've been a long time fan of using the Heroku platform and have contributed
+      a fair amount to the Heroku community over the last few years.  I've also
+      spent the last few months writing the upcoming 'Heroku' for O'Reilly.
+
+    %p
+      When I'm not near a computer I can be found pounding the hell out of a
+      drumkit somewhere, putting some sort of model together, or trying to
+      keep the kids in check.
+
+    %p
+      You can find me on:
+      %ul
+        %li
+          %a{href: "http://twitter.com/neilmiddleton"} Twitter
+        %li
+          %a{href: "https://github.com/neilmiddleton"} Github
+        %li
+          %a{rel: "me", href: "https://plus.google.com/112930018257305394130"} Google+
+        %li
+          %a{href: "http://stackoverflow.com/users/4787/neil-middleton"} Stackoverflow

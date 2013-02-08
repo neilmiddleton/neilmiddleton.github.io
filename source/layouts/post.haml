@@ -6,6 +6,8 @@
       %p.date
         Posted on
         = current_page.date.strftime("%e %B, %Y")
+        by
+        %a{rel: "author", href: "/about-me"}Neil Middleton
 
     = yield
     = partial 'layouts/wip' if current_page.data[:wip]
