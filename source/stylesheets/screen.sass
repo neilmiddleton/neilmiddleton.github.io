@@ -76,10 +76,9 @@ blockquote
     border-radius: 5px
   .meta
     float: right
-    margin: 3px 10px 0 0
-    a
-      margin-right: 20px
-      font-size: 15px
+    margin: -8px 10px 0 0
+    .pad
+
   .name
     display: inline-block
     float: left
@@ -97,16 +96,19 @@ blockquote
 
 .header, footer
   ul
+    height: 32px
     list-style: none
     li
       display: inline-block
-      margin: 0 3px 0 0
-      &::after
-        content: ' | '
-      &:last-child::after
-        content: ''
-      a
-        margin: 0 3px
+      width: 90px
+      height: 32px
+
+footer
+  ul
+    li
+      &:first-child
+        width: 250px
+        text-align: left
 
 .header
   ul
@@ -172,7 +174,41 @@ article
     margin: 20px 0 0 20px
 
 footer
+  clear: both
   border-top: 1px solid #eee
   font-size: 12px
   margin: 20px 0
   padding: 20px 0 20px 15px
+
+.meta
+  #twitter
+    background: url(/images/twitter3.png) no-repeat
+
+  #github
+    background: url(/images/github3.png) no-repeat
+
+  #twitter, #github
+    display: inline-block
+    height: 32px
+    width: 32px
+    margin: 10px 0 0 10px
+    opacity: 0.8
+    span
+      display: none
+
+#about-me
+  list-style: none
+  li
+    height: 42px
+    float: left
+    width: 50%
+    a
+      margin: 5px 0 0 50px
+  #twitter
+    background: url(/images/twitter3.png) no-repeat
+  #github
+    background: url(/images/github3.png) no-repeat
+  #google-plus
+    background: url(/images/google-plus.png) no-repeat
+  #stackoverflow
+    background: url(/images/stackoverflow.png) no-repeat

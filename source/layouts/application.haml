@@ -21,14 +21,15 @@
               @neilmiddleton
         %section.meta
           %ul
-            %li
+            %li.pad
               %a#about_me{href: "/about-me"} About
-            %li
+            %li.pad
               %a#articles{href: "/articles"} Articles
             %li
-              %a#github{href: "https://github.com/neilmiddleton"} Github
-            %li
-              %a#twitter{href: "https://twitter.com/neilmiddleton"} Twitter
+              %a#github{href: "https://github.com/neilmiddleton"}
+                %span Github
+              %a#twitter{href: "https://twitter.com/neilmiddleton"}
+                %span Twitter
     .container
       = yield
       %footer
