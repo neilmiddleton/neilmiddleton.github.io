@@ -35,7 +35,7 @@ Therefore, by using a CNAME, you can leave all the clever routing stuff to the p
 In fact, on Heroku, this is so important that sending application traffic to a static IP addresses is /not supported/.
 
 > #### Learning 1
-> `www.yourapp.com`  should always try to CNAME your applications Heroku provided domain
+> `www.yourapp.com`  should always always CNAME to your application's Heroku hostname
 
 ## Apex domains
 
