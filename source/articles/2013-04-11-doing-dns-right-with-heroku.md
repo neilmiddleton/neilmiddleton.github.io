@@ -28,12 +28,14 @@ Heroku therefore recommend that you use CNAME's as much as possible.  These dele
 
 Each and every Heroku app has a unique domain attached to it.  These take the form of `app.heroku.com` or `app.herokuapp.com` depending on which stack you are using.  Any requests arriving at those domains will get routed to the appropriate app regardless of what is going on with the network as those domains are managed constantly by Heroku's routing team.
 
+> There is one exclusion to this rule and that's sites that run under SSL, in which case your endpoint will be `something.herokussl.com`
+
 Therefore, by using a CNAME, you can leave all the clever routing stuff to the people that know what they are doing, and not hindering your application by welding it onto the side of some random IP address.
 
 In fact, on Heroku, this is so important that sending application traffic to a static IP addresses is /not supported/.
 
 > #### Learning 1
-> `www.yourapp.com`  should always try to CNAME `yourapp.herokuapp.com`
+> `www.yourapp.com`  should always try to CNAME your applications Heroku provided domain
 
 ## Apex domains
 
