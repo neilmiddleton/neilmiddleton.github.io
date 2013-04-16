@@ -13,16 +13,20 @@ Creating an application in the EU is dead simple too as it all uses the same con
 
 For instance, to create an application, first, check the regions available:
 
-    $ heroku regions
-    === Regions
-    eu  Europe
-    us  United States
+```bash
+$ heroku regions
+=== Regions
+eu  Europe
+us  United States
+```
 
 and then create your application in your chosen region:
 
-    $ heroku create --region eu
-    Creating warm-earth-8363... done, region is eu
-    http://warm-earth-8363.herokuapp.com/ | git@heroku.com:warm-earth-8363.git
+```bash
+$ heroku create --region eu
+Creating warm-earth-8363... done, region is eu
+http://warm-earth-8363.herokuapp.com/ | git@heroku.com:warm-earth-8363.git
+```
 
 From this point on, everything about this application will be EU-centric.  Heroku will create a database in the same region as your application, and all future scaling will be done here too.  and where possible, latency susceptible add-ons will be provisioned in Europe.  However, all the standard control (logs, config etc) and routing will all still be done in exactly the same way as before.
 
@@ -32,13 +36,15 @@ So, what about existing applications?  How can we get those into Europe?
 
 Well, this is why Heroku have provided `fork`, a simple way of cloning an application from one location into another:
 
-    $  heroku fork -a neilmiddleton neilmiddleton-eu-region --region eu
-    Creating fork neilmiddleton-eu-region... done
-    Copying slug... done
-    Adding kerosene:test... skipped (This app is in region eu, kerosene:test is only available in region us.)
-    Adding newrelic:standard... done
-    Copying config vars... done
-    Fork complete, view it at http://neilmiddleton-eu-region.herokuapp.com/
+```bash
+$  heroku fork -a neilmiddleton neilmiddleton-eu-region --region eu
+Creating fork neilmiddleton-eu-region... done
+Copying slug... done
+Adding kerosene:test... skipped (This app is in region eu, kerosene:test is only available in region us.)
+Adding newrelic:standard... done
+Copying config vars... done
+Fork complete, view it at http://neilmiddleton-eu-region.herokuapp.com/
+```
 
 And that's it.  This command copies your application across to a new application in the EU, provisions all the add-ons you have, including databases and copies your configuration across.
 
