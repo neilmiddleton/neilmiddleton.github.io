@@ -18,7 +18,7 @@ http {
   server {
 
   <% if ENV['STAGING'] %>
-    location  /  {
+    location    {
       auth_basic            "Restricted";
       auth_basic_user_file  neilmiddleton.htpasswd;
     }
