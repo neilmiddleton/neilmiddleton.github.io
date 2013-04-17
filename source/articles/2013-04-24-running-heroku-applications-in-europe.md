@@ -1,6 +1,6 @@
 ---
-title: Running Heroku applications in Europe	
-published: false
+title: Running Heroku applications in Europe
+published: true
 ---
 
 Up until today, when you have created a Heroku application it has always been run within the US-East region of the Amazon AWS infrastructure.  This has caused a few problems for those in the EU, most importantly that every request has suffered from the latency you get from a transatlantic crossing.
