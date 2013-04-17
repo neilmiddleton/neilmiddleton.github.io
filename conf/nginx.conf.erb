@@ -17,13 +17,6 @@ http {
 
   server {
 
-  <%= if ENV['STAGING'] == 'true' %>
-    location /  {
-      auth_basic            "Restricted";
-      auth_basic_user_file  neilmiddleton.htpasswd;
-    }
-  <% end %>
-
     listen           <%= ENV['PORT'] %>;
     server_name      <%= ENV['HOST'] || 'localhost' %>;
 
@@ -43,6 +36,11 @@ http {
       root           build;
       autoindex      off;
       expires        <%= ENV['DEFAULT_TTL'] || 3600 %>s;
+
+      <% if ENV["STAGING"] == true %>
+      auth_basic            "Restricted";
+      auth_basic_user_file  neilmiddleton.htpasswd;
+      <% end %>
 
       # Static assets
       location ~* (-[A-Za-z0-9]+)\.(css|js|gif|jpe?g|png|woff) {
