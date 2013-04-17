@@ -37,7 +37,7 @@ http {
       autoindex      off;
       expires        <%= ENV['DEFAULT_TTL'] || 3600 %>s;
 
-      <% if ENV["STAGING"] == true %>
+      <% if ENV["STAGING"] %>
       auth_basic            "Restricted";
       auth_basic_user_file  neilmiddleton.htpasswd;
       <% end %>
