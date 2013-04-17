@@ -17,6 +17,13 @@ http {
 
   server {
 
+  <% if ENV['STAGING'] %>
+    location  /  {
+      auth_basic            "Restricted";
+      auth_basic_user_file  neilmiddleton.htpasswd;
+    }
+  <% end -%>
+
     listen           <%= ENV['PORT'] %>;
     server_name      <%= ENV['HOST'] || 'localhost' %>;
 
