@@ -38,7 +38,7 @@ To compound this, people will often dive into NewRelic to try and see what's cau
 
 Well, for starters there's a couple of immediate things that you can do.
 
-First of all, if you're running on the Bamboo stack, upgrade to Cedar.  The only web server type available on Bamboo is Thin, which isn't concurrent and won't help you here.  Upgrading to Cedar will give you the option of using other servers, as well as a whole host of other benefits such as improved routing.
+First of all, if you're running on the Bamboo stack, upgrade to Cedar.  The only web server type available on Bamboo is Thin, which requires your application to be specially crafted to take advantage of its evented concurrency model.  Upgrading to Cedar will give you the option of using other servers, as well as a whole host of other benefits such as granular process formation.
 
 Secondly, upgrade to a concurrent server.  This is probably the most important step of all.  By using a server that can support more than one request at a time, you are mitigating the effect that a single slow request can have on your application.  Other requests will be able to sidestep slow runners and carry on as normal.  Try to get as many worker processes as possible running inside your new concurrent server, maybe even using 2X dynos if you can.  Saying that, this doesn't completely stop slow runners so…
 
