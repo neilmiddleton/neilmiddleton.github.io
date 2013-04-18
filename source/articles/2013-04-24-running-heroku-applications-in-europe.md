@@ -40,7 +40,7 @@ Well, this is why Heroku have provided `fork`, a simple way of cloning an applic
 $  heroku fork -a neilmiddleton neilmiddleton-eu-region --region eu
 Creating fork neilmiddleton-eu-region... done
 Copying slug... done
-Adding kerosene:test... skipped (This app is in region eu, kerosene:test is only available in region us.)
+Adding openredis:micro... skipped (This app is in region eu, openredis:micro is only available in region us.)
 Adding newrelic:standard... done
 Copying config vars... done
 Fork complete, view it at http://neilmiddleton-eu-region.herokuapp.com/
