@@ -6,13 +6,13 @@ wip: true
 
 ## tl;dr
 
-- H12s are usually a result of inadequate concurrency or capacity.
-- Using a concurrent server such as Unicorn (Ruby), or Gunicorn (Python) is a must
-- Using a safety belt such as [Rack::Timeout](https://github.com/kch/rack-timeout) is advisable
+- H12s are usually a result of inadequate capacity or ability to handle concurrent requests.
+- Using a server such as Unicorn (Ruby) or Gunicorn (Python) that lets you better utilise concurrency in your backends is a must.
+- Using a safety belt such as [Rack::Timeout](https://github.com/kch/rack-timeout) is advisable.
 
 ## Background
 
-In my day to day activities at Heroku, and almost every day I see users having issues with H12 errors that are appearing in their logs and they don't know what the problem might be.
+In my day to day activities at Heroku, I see users having issues with H12 errors that are appearing in their logs and they don't know what the problem might be.
 
 The signature is a common one.  An application with little real load  and requests of a low average runtime. Suddenly a boat load of H12 errors start to appear in the logs, and a `heroku restart` temporarily solves the problem.
 
