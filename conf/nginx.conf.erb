@@ -39,7 +39,7 @@ http {
 
       <% if ENV["STAGING"] %>
       auth_basic            "Restricted";
-      auth_basic_user_file  neilmiddleton.htpasswd;
+      auth_basic_user_file  site.htpasswd;
       <% end %>
 
       # Static assets
