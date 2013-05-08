@@ -6,6 +6,7 @@ gem "haml"
 gem "redcarpet"
 gem "pygments.rb"
 gem "newrelic_rpm"
+gem "nokogiri"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0.0"

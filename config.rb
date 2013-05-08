@@ -1,6 +1,9 @@
 require "lib/pygments_renderer"
 require "newrelic_rpm"
 
+Haml::Filters.remove_filter('Markdown')
+Haml::Filters.register_tilt_filter('Markdown', template_class: Tilt::RedcarpetTemplate::Redcarpet2)
+
 set :markdown_engine, :redcarpet
 set :markdown, :renderer => PygmentsRenderer, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true,
     :no_intra_emphasis => true, :strikethrough => true, :with_toc_data => true

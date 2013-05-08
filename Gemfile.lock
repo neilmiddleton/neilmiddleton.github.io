@@ -62,6 +62,7 @@ GEM
       sprockets-sass (~> 0.9.1)
     multi_json (1.7.3)
     newrelic_rpm (3.6.1.88)
+    nokogiri (1.5.9)
     padrino-core (0.10.7)
       activesupport (~> 3.2.0)
       http_router (~> 0.10.2)
@@ -115,5 +116,6 @@ DEPENDENCIES
   middleman
   middleman-blog
   newrelic_rpm
+  nokogiri
   pygments.rb
   redcarpet
