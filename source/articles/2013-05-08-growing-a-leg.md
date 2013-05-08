@@ -21,7 +21,7 @@ After a few minutes I decided I should tell the wife I'd be late home and then g
 
 A short time later I was in hospital and getting seen to.
 
-After a very hasty short while, some X-Rays and an CT Scan it was found I had smashed my hip up and had slightly dislocated a shoulder.  What's more it was in about eight pieces, none of which were where they should be.  This meant surgery.
+After a very hasty short while, some X-Rays and an CT Scan it was found I had smashed my hip up into about eight pieces and had slightly dislocated a shoulder. This meant surgery.
 
 ![Legs](/images/legs.jpg)
 
