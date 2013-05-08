@@ -112,7 +112,7 @@ PLATFORMS
 DEPENDENCIES
   builder (~> 3.0.0)
   haml
-  middleman (~> 3.0.9)
+  middleman
   middleman-blog
   newrelic_rpm
   pygments.rb
