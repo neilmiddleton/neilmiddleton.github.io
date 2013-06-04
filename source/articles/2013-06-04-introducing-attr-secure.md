@@ -1,5 +1,5 @@
 ---
-title: Introducting attr_secure
+title: Introducing attr_secure
 published: true
 ---
 
