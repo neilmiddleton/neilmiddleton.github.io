@@ -4,9 +4,23 @@
 
 .container
   width:  100%
-  max-width: 750px
   min-width: 300px
   margin: auto
+
+header
+  padding: 72px 0
+
+.content, article
+  width: 650px
+  margin: auto
+  display: block
+
+  .date
+    margin-bottom: inherit
+    color: inherit
+    font-size: 16px
+    line-height: 1.6875
+    font-weight: 400
 
 html, body
   height: 100%
@@ -14,8 +28,9 @@ html, body
 h1, h2, h3, h4
   font-family: "Helvetica Neue", "Helvetica", arial, sans-serif
   color: #333
-  font-weight: 300
-  letter-spacing: -1px
+  font-weight: 700
+  line-height: 1.2
+  letter-spacing: -.03px
 
 h1
   font-size: 48px
@@ -33,24 +48,21 @@ h4
 
 body
   background: #FBFBFB
-  color: #111
+  color: #474747
   font-family: "Helvetica Neue", Helvetica,Arial,sans-serif
   line-height: 1.5em
   -webkit-font-smoothing: antialiased
   text-rendering: optimizeLegibility
-  font-size: 18px
-  font-weight: 300
+  font-size: 16px
+  font-weight: 400
 
 a
-  color: #530000
+  color: #cc0000
   text-decoration: none
 
 img.profile
   margin: 8px 10px 10px 0
-
-article
-  a
-    border-bottom: 1px #bbb dashed
+  border-bottom: 1px #bbb dashed
   li
     margin-bottom: 10px
 
@@ -85,14 +97,12 @@ blockquote
     a
       float: left
       margin: 5px 0 0 0
-      color: #666
-      font-weight: 400
-      font-size: 29px
+      font-weight: 700
+      font-size: 24px
       letter-spacing: -1px
-      font-family: 'Varela', 'Arial', serif
+      font-family: 'Helvetica Neue', 'Arial', serif
       -webkit-font-smoothing: antialiased
       text-rendering: optimizeLegibility
-  .date!
 
 .header, footer
   ul
@@ -129,9 +139,6 @@ footer
 
 .listing h3
   margin: 20px 0
-
-.content, article
-  margin: 0 15px
 
 p.note
   background: #F0F5F9
@@ -181,12 +188,14 @@ footer
   padding: 20px 0 20px 15px
 
 .meta
+  padding-right: 20px
+  li
+    font-weight: 700
+    font-size: 13px !important
   #twitter
     background: url(/images/twitter3.png) no-repeat
-
   #github
     background: url(/images/github3.png) no-repeat
-
   #twitter, #github
     display: inline-block
     height: 32px

@@ -2,12 +2,9 @@
 - wrap_layout(:application) do
   %article
     %header
-      %h1= current_page.title
       %p.date
-        Posted on
         = current_page.date.strftime("%e %B, %Y")
-        by
-        %a{rel: "author", href: "/about-me"}Neil Middleton
+      %h1= current_page.title
 
     = yield
     = partial 'layouts/wip' if current_page.data[:wip]
