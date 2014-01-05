@@ -12,6 +12,7 @@ activate :blog do |blog|
   blog.permalink = ":title"
   blog.layout = "post"
   blog.sources = "articles/:year-:month-:day-:title"
+  blog.summary_length = 300
 end
 
 Time.zone = "London"

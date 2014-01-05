@@ -1,5 +1,42 @@
-
 - wrap_layout :application do
-  %section.content
-    = partial 'layouts/bio'
-    = partial 'layouts/articles_list'
+  .col-md-8
+    %h1
+      Neil Middleton
+    .bio
+      %p
+        I'm an engineer at Heroku based in the UK and the author of 'Heroku, Up & Running' for O'Reilly.
+      %p
+        I'm a massive fan of keeping things simple, straight-forward and bullshit free.
+
+  .col-md-4
+    %img.img-thumbnail.avatar{src: '/images/mugshot.jpg'}
+
+  .col-md-4
+    %h2
+      writings
+    %ul.writings
+      %li
+        %a{href: "https://twitter.com/neilmiddleton"}
+          ≤ 140 characters
+      %li
+        %a{href: "https://github.com/neilmiddleton"}
+          Code
+        and
+        %a{href: "https://gist.github.com/neilmiddleton"}
+          Gists
+        (Github)
+      %li
+        %a{href: "http://stackoverflow.com/users/4787/neil-middleton"}
+          Stackoverflow
+      %li
+        %a{href: "http://www.linkedin.com/pub/neil-middleton/67/132/333"}
+          Resumé (LinkedIn)
+
+  .col-md-8
+    %h2
+      recent articles
+    .recent_writings
+      - page_articles.first(5).each do |article|
+        %h4= link_to article.title, article
+        = article.summary.gsub!(/(<[^>]*>)|\n|\t/, " ")
+        %hr

@@ -1,7 +1,6 @@
 /*
 *= require_self
+*= require bootstrap.min
 *= require screen
-*= require mobile
-*= require syntax
 *= require code
 */

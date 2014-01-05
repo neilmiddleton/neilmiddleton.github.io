@@ -7,36 +7,12 @@
     %meta{name: "author", content: "Neil Middleton"}
     %meta{name: 'viewport', content: "width=device-width,initial-scale=1.0,maximum-scale=1.0"}
     = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Libre+Baskerville", :media => "all"
     %link{rel: "alternate", type: "application/rss+xml", title: "Neil Middleton", href: "/feed.xml"}
 
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Source+Code+Pro", :media => "all"
     = partial 'layouts/ga'
 
   %body
-    %section.header
-      .container
-        %section.name
-          %a{href: "/"}
-            %span#neil
-              @neilmiddleton
-        %section.meta
-          %ul
-            %li.pad
-              %a#about_me{href: "/about-me"} About
-            %li.pad
-              %a#articles{href: "/articles"} Articles
-            %li
-              %a#github{href: "https://github.com/neilmiddleton"}
-                %span Github
-              %a#twitter{href: "https://twitter.com/neilmiddleton"}
-                %span Twitter
-    .container
+    .container.col-md-8.col-md-offset-2
       = yield
-      %footer
-        %ul
-          %li
-            neil {at} neilmiddleton {dot} com
-          %li
-            %a#colophon{href: "/colophon"} Colophon
-          %li
-            %a#contributors{href: "/colophon#contributors"} Contributors

@@ -1,229 +1,28 @@
-*
-  margin: 0
-  padding: 0
-
 .container
-  width:  100%
-  min-width: 300px
-  margin: auto
+  font-size: 1.3em
 
-  article
-    p
-      img
-        display: block
-        margin: auto
+h1, h2
+  font-weight: 800
 
-header
-  padding: 72px 0
+h1, h2, h3, h4, h5, h6
+  font-face: 'Helvetica Neue', Helvetica, sans-serif
 
-.content, article
-  width: 650px
-  margin: auto
-  display: block
+.avatar
+  margin-top: 40px
 
-  .date
-    margin-bottom: inherit
-    color: inherit
-    font-size: 16px
-    line-height: 1.6875
-    font-weight: 400
+.bio, .writings, .recent_writings, .side-bio, .post
+  font-family: 'Libre Baskerville', 'Georgia', serif
 
-html, body
-  height: 100%
+.side-bio
+  font-size: 0.8em
 
-h1, h2, h3, h4
-  font-family: "Helvetica Neue", "Helvetica", arial, sans-serif
-  color: #333
-  font-weight: 700
-  line-height: 1.2
-  letter-spacing: -.03px
-
-h1
-  font-size: 48px
-  margin-bottom: 10px
-  line-height: 55px
-
-h2
-  font-size: 30px
-
-h3
-  font-size: 24px
-
-h4
-  font-size: 20px
-
-body
-  background: #FBFBFB
-  color: #222
-  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif
-  line-height: 1.5em
-  -webkit-font-smoothing: antialiased
-  text-rendering: optimizeLegibility
-  font-size: 16px
-  font-weight: 400
+ul.writings
+  margin-top: 20px
+  li
+    margin: 0 0 20px -20px
+    list-style: none
 
 a
-  color: #cc0000
+  color: purple
   text-decoration: none
-
-img.profile
-  margin: 8px 10px 10px 0
-  border-bottom: 1px #bbb dashed
-  li
-    margin-bottom: 10px
-
-blockquote
-  padding-left: 20px
-  font-style: italic
-  border-left: 1px solid #530000
-
-.header
-  position: relative
-  width: 100%
-  top: 0px
-  left: 0px
-  padding: 15px 0 0 15px
-  border-bottom: 1px solid #eee
-  height: 50px
-  margin-bottom: 40px
-  background-color: #FFF
-  box-shadow: #ccc 0 0 5px
-  font-size: 29px
-  a img.avatar
-    float: left
-    border-radius: 5px
-  .meta
-    float: right
-    margin: -8px 10px 0 0
-    .pad
-
-  .name
-    display: inline-block
-    float: left
-    a
-      float: left
-      margin: 5px 0 0 0
-      font-weight: 700
-      font-size: 24px
-      letter-spacing: -1px
-      font-family: 'Helvetica Neue', 'Arial', serif
-      -webkit-font-smoothing: antialiased
-      text-rendering: optimizeLegibility
-
-.header, footer
-  ul
-    height: 32px
-    list-style: none
-    li
-      display: inline-block
-      width: 90px
-      height: 32px
-
-footer
-  ul
-    li
-      &:first-child
-        width: 250px
-        text-align: left
-
-.header
-  ul
-    li
-      font-size: 17px
-
-#neil > span
-  font-size: 28px
-
-.bio
-  margin: 20px 0 25px 0
-  border-bottom: 1px solid #eee
-  padding-bottom: 5px
-  p
-    margin: 20px 0
-  .intro
-    font-size: 2em
-
-.listing h3
-  margin: 20px 0
-
-p.note
-  background: #F0F5F9
-  border: 1px solid #D0DBE6
-  -moz-border-radius: 3px
-  -webkit-border-radius: 3px
-  border-radius: 3px
-  color: #777
-  margin: 30px 15px
-  padding: 10px 20px 10px 20px
-  letter-spacing: normal
-  line-height: 1.5em
-  font-size: 14px
-
-article
-  p
-    margin-bottom: 20px
-    line-height: 1.8em
-  header p
-    font-size: 90%
-    color: #aaa
-  h2, h3, h4
-    margin: 30px 0
-    line-height: 30px
-  ul, ol
-    margin: 0 0 20px 20px
-  > h1
-    display: none
-
-.content .listing li
-  list-style: none
-  span
-    float: right
-    font-size: 90%
-
-#related
-  font-size: 90%
-  margin-top: 20px
-  ul
-    margin: 20px 0 0 20px
-
-footer
-  clear: both
-  border-top: 1px solid #eee
-  font-size: 12px
-  margin: 20px 0
-  padding: 20px 0 20px 15px
-
-.meta
-  padding-right: 20px
-  li
-    font-weight: 700
-    font-size: 13px !important
-  #twitter
-    background: url(/images/twitter3.png) no-repeat
-  #github
-    background: url(/images/github3.png) no-repeat
-  #twitter, #github
-    display: inline-block
-    height: 32px
-    width: 32px
-    margin: 10px 0 0 10px
-    opacity: 0.8
-    span
-      display: none
-
-#about-me
-  list-style: none
-  li
-    height: 42px
-    float: left
-    width: 50%
-    a
-      margin: 5px 0 0 50px
-  #twitter
-    background: url(/images/twitter3.png) no-repeat
-  #github
-    background: url(/images/github3.png) no-repeat
-  #google-plus
-    background: url(/images/google-plus.png) no-repeat
-  #stackoverflow
-    background: url(/images/stackoverflow.png) no-repeat
+  border-bottom: 1px dotted

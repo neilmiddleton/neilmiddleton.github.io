@@ -1,11 +1,34 @@
 - content_for(:page_title, current_page.title)
 - wrap_layout(:application) do
-  %article
-    %header
+
+  .col-md-9
+    %h1
+      Neil Middleton
+
+    .post
+      %h2= current_page.title
       %p.date
         = current_page.date.strftime("%e %B, %Y")
-      %h1= current_page.title
+      = yield
 
-    = yield
-    = partial 'layouts/wip' if current_page.data[:wip]
+
+  .col-md-3
+    %img.img-thumbnail.avatar{src: '/images/mugshot.jpg'}
+    .side-bio
+      %p
+        I'm
+        %a{href: "http://www.neilmiddleton.com"}
+          Neil Middleton.
+      %p
+        I'm an engineer at Heroku based in the UK and the author of 'Heroku, Up & Running' for O'Reilly.
+      %p
+        I'm a massive fan of keeping things simple, straight-forward and bullshit free.
+  / %article
+  /   %header
+  /     %p.date
+  /       = current_page.date.strftime("%e %B, %Y")
+  /     %h1= current_page.title
+
+  /   = yield
+  /   = partial 'layouts/wip' if current_page.data[:wip]
 
