@@ -19,6 +19,16 @@ Another thing that I've been meaning to start doing more recently is working les
 
 More hours worked != more things achieved.
 
+In addition to this, I'm going to think of new ways to spice up what I do day to day.  Either change up the way that I currently work, or add new things to my domain that might take me in new directions in the future.  (N.B [Heroku](https://heroku.com) is an excellent employer for this)
+
 ## It's not all work
 
 Which is where we start to think about things that aren't work related.  When working in a job you love it's tempting to let it take over everything you do and define you.  This year I'll be working to bring in some other significant pastime beyond family, work, and [endless physio](/growing-a-leg/) into my life.  I've some ideas on what this might comprise of, so maybe stay tuned for any news.
+
+## In Summary
+
+So, in short the goals I have are this
+
+* Work with new tools doing new things
+* Work a more reasonable amount
+* Do something new outside of work, and completely different to work.
