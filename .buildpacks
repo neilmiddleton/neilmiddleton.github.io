@@ -1,2 +1,2 @@
-git://github.com/meskyanichi/heroku-buildpack-middleman.git
+git://github.com/neilmiddleton/heroku-buildpack-middleman.git
 git://github.com/neilmiddleton/heroku-buildpack-nginx.git
