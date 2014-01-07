@@ -9,9 +9,11 @@ I'm not normally one for writing articles about things such as new years, but I 
 
 For years, I've been a single tool developer - always focusing on one particular programming language and doing everything with that one tool.  Whilst I've certainly been exposing myself to numerous other tools over the years, these have never been more than via fleeting glimpses into another world. Whilst this has probably helped me over the years with gaining insight into how other people do things, I've never found myself actively using these tools much.  As such I've always kept on doing things in my default tool of choice, that currently being [Ruby](https://www.ruby-lang.org/en/).
 
-Therefore, from now on, I'm going to try and get more to grips with another tool, and try to use it day to day much more.
+Therefore, from now on, I'm going to try and get more to grips with other tools, and try to use them day to day much more.
 
 In this instance, I'm looking at [Python](http://www.python.org).  Python has many things that appeals - it's fairly Ruby-esque in many ways, but very different in others.  It has a very appealing menifesto via the [zen of python](http://www.python.org/dev/peps/pep-0020/), and largely makes a lot of sense.  Additionally, I have access to [certain](http://kennethreitz.org) [coworkers](http://jacobian.org) who can help me when I get stuck.  It's not a hard thing to pick up, so I might as well make use of it.
+
+I'm also going to look into spending more time with Node.js.  Node is one of Heroku's most popular languages these days and it keeps popping up with all sorts of useful use cases that other languages just struggle to provide the same simplicity and performance.  Node in my eyes is just reaching that point of maturity now where it's less of a toy and more of a thing which can be take seriously.
 
 ## Do less
 
