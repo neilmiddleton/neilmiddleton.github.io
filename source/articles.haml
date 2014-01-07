@@ -1,4 +1,17 @@
 - content_for(:page_title, "Articles")
 - wrap_layout(:application) do
-  %section.content
+  .col-md-8
+    %h1
+      Neil Middleton
+    .bio
+      %p
+        I'm an engineer at Heroku based in the UK and the author of 'Heroku, Up & Running' for O'Reilly.
+      %p
+        I'm a massive fan of keeping things simple, straight-forward and bullshit free.
+
+  .col-md-4
+    %img.img-thumbnail.avatar{src: '/images/mugshot.jpg'}
+
+
+  .col-md-8
     = partial 'layouts/articles_list'

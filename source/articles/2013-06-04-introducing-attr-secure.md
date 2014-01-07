@@ -18,7 +18,7 @@ After some hackage, and with the help of [Damien Mathieu](https://github.com/dma
 attr_secure strives to stay out of your way, providing a dead simple way to request security on your stored model attributes.
 
 ```ruby
-        class Report < ActiveRecord::Base
+class Report < ActiveRecord::Base
   attr_secure :secret_value
 end
 

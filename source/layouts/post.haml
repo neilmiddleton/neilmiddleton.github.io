@@ -9,7 +9,8 @@
       %h2= current_page.title
       %p.date
         = current_page.date.strftime("%e %B, %Y")
-      = yield
+      = preserve do
+        = yield
 
 
   .col-md-3
