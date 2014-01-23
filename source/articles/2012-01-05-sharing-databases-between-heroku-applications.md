@@ -4,8 +4,6 @@ title: Sharing databases between Heroku applications
 category: Heroku
 wip: true
 ---
-#Sharing databases between Heroku applications
-
 When you deploy an application to Heroku, you'll probably know that all
 applications receive a free 5mb database on their shared PostgreSQL
 database service.  Whilst these are on shared servers at Heroku, the
