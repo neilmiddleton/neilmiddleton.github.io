@@ -33,9 +33,6 @@ config.assets.compress = true
 
 # Allow fingerprinting of asset filenames - good for caching.
 config.assets.digest = true
-
-# Configure the sendfile headers for Heroku.  "X-Accel-Redirect" is also a good value for this since Heroku use Nginx.
-config.action_dispatch.x_sendfile_header = nil
 ```
 
 If you're doing anything out of the ordinary this config might need some tweaking.  See the Rails guide for more information.
