@@ -1,5 +1,0 @@
-%ul.listing
-  - page_articles.group_by{|a| a.date.strftime("%Y")}.each do |year, articles|
-    %h3= year
-    - articles.each do |article|
-      %li= link_to article.title, article
