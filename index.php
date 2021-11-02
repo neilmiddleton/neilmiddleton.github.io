@@ -17,7 +17,7 @@
           I am Neil Middleton
         </h1>
         <p>
-          I work at <a href="http://www.heroku.com">Heroku</a>.
+          I work at <a href="http://www.zendesk.com">Zendesk</a>.
         </p>
         <p>
           I write <a href='https://github.com/neilmiddleton'>code</a>.
